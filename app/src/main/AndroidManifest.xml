@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Exact alarm permission -->
+    <uses-permission
+        android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <!-- Notification permission -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Vibration -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <!-- Full screen alarm -->
+    <uses-permission
+        android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthTwin">
+
+        <!-- Profile -->
+        <activity
+            android:name=".profile.EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".profile.AccountActivity"
+            android:exported="false" />
+
+        <!-- Report -->
+        <activity
+            android:name=".report.AddReportActivity"
+            android:exported="false" />
+
+        <!-- BMI -->
+        <activity
+            android:name=".bmi.BMIActivity"
+            android:exported="false" />
+
+        <!-- AI Chat -->
+        <activity
+            android:name=".ai.AIChatActivity"
+            android:exported="false" />
+
+        <!-- Dashboard -->
+        <activity
+            android:name=".dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity android:name=".report.HealthReportsActivity" android:exported="false" />
+
+        <!-- Login - Launcher -->
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <!-- Signup -->
+        <activity
+            android:name=".auth.SignupActivity"
+            android:exported="false" />
+
+        <!-- Medicine Reminder Screen -->
+        <activity
+            android:name=".medicine.MedicineReminderActivity"
+            android:exported="false" />
+
+        <!-- Medicine Alarm Screen -->
+        <activity
+            android:name=".medicine.MedicineAlarmActivity"
+            android:exported="false"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true" />
+
+        <!-- Medicine Alarm Receiver -->
+        <receiver
+            android:name=".medicine.MedicineReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Water Intake -->
+        <activity
+            android:name=".water.WaterIntakeActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

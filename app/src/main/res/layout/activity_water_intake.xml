@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💧 Water Intake"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stay hydrated and keep your body healthy"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Current Water -->
+
+        <TextView
+            android:id="@+id/tvWaterAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 ml"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvWaterGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal: 2000 ml"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <!-- Progress -->
+
+        <ProgressBar
+            android:id="@+id/progressWater"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <!-- Glass count -->
+
+        <TextView
+            android:id="@+id/tvGlassCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 glasses"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Input -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Water amount (ml)"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etWaterAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="＋ Add Water"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Remove -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRemoveWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="− Remove Water"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Reset -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Today's Intake"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+

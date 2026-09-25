@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#F5F9FF">
+
+
+    <ScrollView
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:fillViewport="true"
+        android:focusable="false"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="28dp">
+
+
+            <ImageView
+
+                android:id="@+id/imgLogo"
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+
+                android:layout_gravity="center"
+
+                android:src="@drawable/logo"
+
+                android:contentDescription="HealthTwin Logo"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="HealthTwin AI"
+
+                android:textSize="30sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#0F172A"
+
+                android:layout_gravity="center"
+
+                android:layout_marginTop="12dp"/>
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Create your health profile"
+
+                android:textSize="15sp"
+
+                android:textColor="#64748B"
+
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="40dp"/>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="24dp"
+
+                app:cardElevation="8dp"
+
+                app:cardBackgroundColor="@android:color/white">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+
+                    android:padding="20dp">
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="Create Account"
+
+                        android:textSize="24sp"
+
+                        android:textStyle="bold"
+
+                        android:textColor="#111827"/>
+
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:text="Join HealthTwin AI today"
+
+                        android:textColor="#6B7280"
+
+                        android:layout_marginBottom="24dp"/>
+
+
+
+                    <!-- FULL NAME -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:hint="Full Name">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etName"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:inputType="textPersonName"
+
+                            android:singleLine="true"
+
+                            android:focusable="true"
+
+                            android:focusableInTouchMode="true"
+
+                            android:clickable="true"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <!-- EMAIL -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="16dp"
+
+                        android:hint="Email">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etEmail"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:inputType="textEmailAddress"
+
+                            android:singleLine="true"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <!-- PASSWORD -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="16dp"
+
+                        android:hint="Password"
+
+                        app:endIconMode="password_toggle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etPassword"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:inputType="textPassword"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="16dp"
+
+                        android:hint="Confirm Password"
+
+                        app:endIconMode="password_toggle">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etConfirmPassword"
+
+                            android:layout_width="match_parent"
+
+                            android:layout_height="wrap_content"
+
+                            android:inputType="textPassword"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <com.google.android.material.button.MaterialButton
+
+                        android:id="@+id/btnSignup"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="56dp"
+
+                        android:layout_marginTop="28dp"
+
+                        android:text="CREATE ACCOUNT"
+
+                        android:textAllCaps="false"
+
+                        android:textSize="18sp"
+
+                        android:textColor="@android:color/white"
+
+                        app:backgroundTint="#2563EB"
+
+                        app:cornerRadius="28dp"/>
+
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+
+                        android:layout_marginTop="24dp">
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:text="Already have an account? "
+
+                            android:textColor="#6B7280"/>
+
+
+
+                        <TextView
+
+                            android:id="@+id/tvLogin"
+
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+
+                            android:text="Login"
+
+                            android:textStyle="bold"
+
+                            android:textColor="#2563EB"
+
+                            android:clickable="true"
+
+                            android:focusable="true"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

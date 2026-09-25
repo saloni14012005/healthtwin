@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "543446303213",
+    "project_id": "healthtwin-3e708",
+    "storage_bucket": "healthtwin-3e708.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543446303213:android:5136324f3b09727a02a7e4",
+        "android_client_info": {
+          "package_name": "com.healthtwin.ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU3UK8bfWETJqVzt7G3fDrgkpsc88QWio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

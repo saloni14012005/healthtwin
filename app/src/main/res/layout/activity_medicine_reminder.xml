@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F9FC">
+
+    <!-- Header -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reminder"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#17324D"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Never miss your medicines"
+            android:textSize="14sp"
+            android:textColor="#718096"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <!-- Form -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Medicine Name -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#17324D"/>
+
+            <EditText
+                android:id="@+id/medicineName"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:hint="e.g. Paracetamol"
+                android:padding="15dp"
+                android:textSize="15sp"
+                android:inputType="textCapSentences"/>
+
+            <!-- Dosage -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosage"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#17324D"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/dosage"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:hint="e.g. 500 mg"
+                android:padding="15dp"
+                android:textSize="15sp"/>
+
+            <!-- Time -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicine Time"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#17324D"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/selectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:text="Select time"
+                android:textSize="15sp"
+                android:textColor="#718096"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- Frequency -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#17324D"
+                android:layout_marginTop="16dp"/>
+
+            <Spinner
+                android:id="@+id/frequencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Save Button -->
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Save Medicine Reminder"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2E86AB"/>
+
+            <!-- My Medicines -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Medicines"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#17324D"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/medicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="14dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- REPORT NAME -->
+
+        <TextView
+            android:id="@+id/tvReportName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Test Report"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#163A5F" />
+
+        <!-- DATE -->
+
+        <TextView
+            android:id="@+id/tvReportDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Date: 24/09/2026"
+            android:textSize="14sp"
+            android:textColor="#718096" />
+
+        <!-- DOCTOR -->
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Doctor: Dr. Sharma"
+            android:textSize="14sp"
+            android:textColor="#718096" />
+
+        <!-- NOTES -->
+
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Notes: Regular checkup"
+            android:textSize="14sp"
+            android:textColor="#718096" />
+
+        <!-- FILE TYPE -->
+
+        <TextView
+            android:id="@+id/tvFileStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="📄 Report file attached"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB" />
+
+        <!-- BUTTONS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenReport"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Open Report"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4A90E2"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteReport"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Delete"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#DC2626"
+                android:backgroundTint="#FFFFFF"
+                app:strokeColor="#DC2626"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
